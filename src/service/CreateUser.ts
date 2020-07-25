@@ -4,12 +4,12 @@ interface CreateUserData {
   password: string;
 }
 
-export default function CreateUser({name = '', email, password}: CreateUserData){
+export default function CreateUser({ name = '', email, password }: CreateUserData) {
   const user = {
     name,
     email,
-    password
-  }
+    password,
+  };
 
-  return user
+  return user;
 }
