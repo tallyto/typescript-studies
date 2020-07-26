@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import CreateUser from '../service/CreateUser';
+import Appointments from './appointments.routes';
 
 const routes = Router();
 
@@ -13,5 +14,6 @@ routes.get('/user', (req, res) => {
 
   return res.json(user);
 });
+routes.use('/appointments', Appointments);
 
 export default routes;
