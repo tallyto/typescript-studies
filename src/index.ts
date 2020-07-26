@@ -1,8 +1,8 @@
 import express from 'express';
-import helloWorld from './routes';
+import routes from './routes';
 
 const app = express();
-app.get('/', helloWorld);
+app.use(routes);
 
 const PORT = 3000;
 app.listen(PORT, () => {
